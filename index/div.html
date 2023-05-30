@@ -1,0 +1,1263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .recordData {
+        display: flex;
+        justify-content: space-around;
+        background-color: #0b3379;
+        width: 84vw;
+        border-radius: 5vw;
+        height: 8vw;
+        margin-left: 6vw;
+        padding-top: 2vw;
+      }
+      .rewardRecord img {
+        width: 84vw;
+        height: 14vw;
+      }
+      .titleData {
+        color: skyblue;
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .date {
+        color: skyblue;
+        line-height: 0vw;
+        text-align: center;
+        font-size: 2.5vw;
+        margin-top: -1vw;
+      }
+      .date1 {
+        font-size: 3vw;
+      }
+      .dataImg img {
+        width: 5vw;
+        height: 5vw;
+        margin-top: 0.5vw;
+      }
+      .rewardImg1 img {
+        width: 8vw;
+        height: 6vw;
+        border: 1px blue solid;
+      }
+      .rewardImg1 {
+        color: blue;
+        font-size: 2.5vw;
+        display: flex;
+        align-items: center;
+      }
+      .switch-container {
+        position: relative;
+        display: inline-block;
+        width: 50px;
+        height: 30px;
+      }
+
+      .switch-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50px;
+        height: 30px;
+      }
+
+      #switch-on {
+        z-index: 1;
+      }
+
+      #switch-off {
+        transform: translateX(100%);
+      }
+
+      .switch-input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+
+      .switch-container.active #switch-on {
+        transform: translateX(-100%);
+      }
+
+      .switch-container.active #switch-off {
+        z-index: 1;
+        transform: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="recordContainer">
+      <div class="dataContainer">
+        <div class="titleData">
+          <p class="time">Time</p>
+          <p class="rewardType">Reward Type</p>
+          <p class="reward">Reward</p>
+        </div>
+        <div class="recordData">
+          <span class="date">
+            <p class="date1">23-05-2023</p>
+            <span class="time1">8:53am</span>
+          </span>
+          <div class="dataImg">
+            <img src="/BasketballAssets/giftDisplayBasketBall.gif" alt="" />
+          </div>
+          <span class="rewardData">
+            <div class="rewardImg1">
+              <img src="/popupAndRest/beanbag.png" alt="" />
+              <span class="rewardText">1000 beans</span>
+            </div>
+          </span>
+        </div>
+      </div>
+    </div>
+    <!-- <script>
+      const switchContainer = document.querySelector(".switch-container");
+      const switchInput = document.querySelector(".switch-input");
+      const switchOn = document.querySelector("#switch-on");
+      const switchOff = document.querySelector("#switch-off");
+
+      switchContainer.addEventListener("click", () => {
+        switchContainer.classList.toggle("active");
+
+        if (switchContainer.classList.contains("active")) {
+          switchOn.style.zIndex = "1";
+          switchOff.style.transform = "none";
+          // Do something when the switch is turned on
+        } else {
+          switchOff.style.zIndex = "1";
+          switchOn.style.transform = "translateX(100%)";
+          // Do something when the switch is turned off
+        }
+      });
+
+      // Optional: Set the initial state of the switch based on some condition
+      if (someCondition) {
+        switchInput.checked = true;
+        switchContainer.classList.add("active");
+        switchOn.style.zIndex = "1";
+        switchOff.style.transform = "none";
+      } else {
+        switchInput.checked = false;
+        switchContainer.classList.remove("active");
+        switchOff.style.zIndex = "1";
+        switchOn.style.transform = "translateX(100%)";
+      }
+    </script> -->
+  </body>
+</html>
+
+
+<div class="dailyDataContainer" id="dailyId">
+  <div class="beanPotBanner">
+    <img src="/BasketballAssets/beansPotBanner.png" alt="" />
+  </div>
+
+  <div class="beanPot">
+    <div class="switchTabs">
+      <div class="slideBtn">
+        <img src="/BasketballAssets/slideButton.png" alt="" />
+        <p class="slideUserTxt">
+          <img src="/BasketballAssets/Daily.png" alt="" />
+        </p>
+      </div>
+    </div>
+
+    <div class="beanData">
+      <img src="/BasketballAssets/bean.png" alt="" />
+      <p class="beanText">3400000</p>
+    </div>
+    <div class="beanPotInfo1">
+      <p class="beanPotText1">BEANS WILL BE REWARDED TOP 5 USERS.</p>
+    </div>
+  </div>
+  <div class="overallTabs">
+    <div class="over1" onclick="overallfun1()">
+      <img src="/2ndPage/tab-selected.gif" id="overallId1" alt="" />
+      <div class="over11">
+        <img src="/images/images/Daily.png" alt="" />
+      </div>
+    </div>
+    <div class="over2" onclick="overallfun2() ">
+      <img src="/2ndPage/tab-unselected.png" id="overallId2" alt="" />
+      <div class="over22">
+        <img src="/images/images/Overall.png" alt="" />
+      </div>
+    </div>
+  </div>
+  <div class="overallDataContainer" id="dailydataId">
+    <div class="leaderboardTag1">
+      <img src="/BasketballAssets/leaderboard.png" alt="" />
+    </div>
+    <div class="leaderboardBg1">
+      <!-- three winner rewarded data -->
+<div class="todayYesContainer">
+<div class="todayYesBg">
+<div class="todaySlide">
+<img src="/BasketballAssets/Overall.png" alt="">
+</div>
+</div>
+</div>
+      <div class="userContainer1">
+        <div class="winnerSilver">
+          <div class="img1">
+            <img src="/BasketballDefaultPage/wolf.jpg" alt="" />
+          </div>
+          <div class="userData1">
+            <p class="userName">NickName</p>
+            <div class="userLevel">
+              <img
+                src="http://streamkarlive.live/streamkar/common/img/ulv/17.png"
+                alt=""
+              />
+            </div>
+            <div class="estReward">
+              Est.Reward:
+              <span class="beanData1">
+                <img src="/BasketballAssets/bean.png" alt="" />
+                000000
+              </span>
+            </div>
+            <span class="scoreLon">
+              <img src="/BasketballAssets/scoreIcon.png" alt="" />
+              2345
+            </span>
+          </div>
+        </div>
+        <div class="winnerGold">
+          <div class="img2">
+            <img src="/BasketballDefaultPage/wolf.jpg" alt="" />
+          </div>
+          <div class="userData2">
+            <p class="userName">NickName</p>
+            <div class="userLevel">
+              <img
+                src="http://streamkarlive.live/streamkar/common/img/ulv/17.png"
+                alt=""
+              />
+            </div>
+            <div class="estReward">
+              Est.Reward:
+              <span class="beanData1">
+                <img src="/BasketballAssets/bean.png" alt="" />
+                000000
+              </span>
+            </div>
+            <span class="scoreLon">
+              <img src="/BasketballAssets/scoreIcon.png" alt="" />
+              2345
+            </span>
+          </div>
+        </div>
+        <div class="winnerBronze">
+          <div class="img3">
+            <img src="/BasketballDefaultPage/wolf.jpg" alt="" />
+          </div>
+          <div class="userData3">
+            <p class="userName">NickName</p>
+            <div class="userLevel">
+              <img
+                src="http://streamkarlive.live/streamkar/common/img/ulv/17.png"
+                alt=""
+              />
+            </div>
+            <div class="estReward">
+              Est.Reward:
+              <span class="beanData1">
+                <img src="/BasketballAssets/bean.png" alt="" />
+                000000
+              </span>
+            </div>
+            <span class="scoreLon">
+              <img src="/BasketballAssets/scoreIcon.png" alt="" />
+              2345
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- leaderboard remainining data here -->
+
+      <div
+        class="parentContainer"
+        id="leaderboardTabs1Data"
+        onclick="parentContainer()"
+      >
+        <div class="userDataContainer">
+          <div class="userBox1">
+            <p class="count">4.</p>
+            <div class="userNameLevel">
+              <span class="userImg">
+                <img src="/BasketballDefaultPage/wolf.jpg" alt="" />
+                <p class="nameText">Name</p>
+              </span>
+              <img
+                src="http://streamkarlive.live/streamkar/common/img/ulv/17.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="scoreIconContainer">
+            <span class="ballCount1">
+              <img src="/BasketballAssets/scoreIcon.png" alt="" />
+              <p class="ballText">2325</p>
+            </span>
+          </div>
+        </div>
+        <div class="userDataContainer">
+          <div class="userBox1">
+            <p class="count">4.</p>
+            <div class="userNameLevel">
+              <span class="userImg">
+                <img src="/BasketballDefaultPage/wolf.jpg" alt="" />
+                <p class="nameText">Name</p>
+              </span>
+              <img
+                src="http://streamkarlive.live/streamkar/common/img/ulv/17.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="scoreIconContainer">
+            <span class="ballCount1">
+              <img src="/BasketballAssets/scoreIcon.png" alt="" />
+              <p class="ballText">2325</p>
+            </span>
+          </div>
+        </div>
+        <div class="userDataContainer">
+          <div class="userBox1">
+            <p class="count">4.</p>
+            <div class="userNameLevel">
+              <span class="userImg">
+                <img src="/BasketballDefaultPage/wolf.jpg" alt="" />
+                <p class="nameText">Name</p>
+              </span>
+              <img
+                src="http://streamkarlive.live/streamkar/common/img/ulv/17.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="scoreIconContainer">
+            <span class="ballCount1">
+              <img src="/BasketballAssets/scoreIcon.png" alt="" />
+              <p class="ballText">2325</p>
+            </span>
+          </div>
+        </div>
+        <div class="userDataContainer">
+          <div class="userBox1">
+            <p class="count">4.</p>
+            <div class="userNameLevel">
+              <span class="userImg">
+                <img src="/BasketballDefaultPage/wolf.jpg" alt="" />
+                <p class="nameText">Name</p>
+              </span>
+              <img
+                src="http://streamkarlive.live/streamkar/common/img/ulv/17.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="scoreIconContainer">
+            <span class="ballCount1">
+              <img src="/BasketballAssets/scoreIcon.png" alt="" />
+              <p class="ballText">2325</p>
+            </span>
+          </div>
+        </div>
+        <div class="userDataContainer">
+          <div class="userBox1">
+            <p class="count">4.</p>
+            <div class="userNameLevel">
+              <span class="userImg">
+                <img src="/BasketballDefaultPage/wolf.jpg" alt="" />
+                <p class="nameText">Name</p>
+              </span>
+              <img
+                src="http://streamkarlive.live/streamkar/common/img/ulv/17.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="scoreIconContainer">
+            <span class="ballCount1">
+              <img src="/BasketballAssets/scoreIcon.png" alt="" />
+              <p class="ballText">2325</p>
+            </span>
+          </div>
+        </div>
+        <div class="userDataContainer">
+          <div class="userBox1">
+            <p class="count">4.</p>
+            <div class="userNameLevel">
+              <span class="userImg">
+                <img src="/BasketballDefaultPage/wolf.jpg" alt="" />
+                <p class="nameText">Name</p>
+              </span>
+              <img
+                src="http://streamkarlive.live/streamkar/common/img/ulv/17.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="scoreIconContainer">
+            <span class="ballCount1">
+              <img src="/BasketballAssets/scoreIcon.png" alt="" />
+              <p class="ballText">2325</p>
+            </span>
+          </div>
+        </div>
+        <div class="userDataContainer">
+          <div class="userBox1">
+            <p class="count">4.</p>
+            <div class="userNameLevel">
+              <span class="userImg">
+                <img src="/BasketballDefaultPage/wolf.jpg" alt="" />
+                <p class="nameText">Name</p>
+              </span>
+              <img
+                src="http://streamkarlive.live/streamkar/common/img/ulv/17.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="scoreIconContainer">
+            <span class="ballCount1">
+              <img src="/BasketballAssets/scoreIcon.png" alt="" />
+              <p class="ballText">2325</p>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="seeMoreLess">
+      <div class="seeMore" onclick="seeMoreBtn()">
+        <img src="/BasketballAssets/seeMore.png" id="seeMore" alt="" />
+      </div>
+    </div>
+  </div>
+  <div class="overallDataContainer" style="display:none;">
+    <!-- overallDataContainer of leaderboardBg  -->
+
+    <div class="leaderboardTag">
+      <img src="/BasketballAssets/leaderboard.png" alt="" />
+    </div>
+    <div class="leaderboardBg">
+      <!-- three winner rewarded data -->
+
+      <div class="userContainer">
+        <div class="winnerSilver">
+          <div class="img1">
+            <img src="/BasketballDefaultPage/wolf.jpg" alt="" />
+          </div>
+          <div class="userData1">
+            <p class="userName">NickName</p>
+            <div class="userLevel">
+              <img
+                src="http://streamkarlive.live/streamkar/common/img/ulv/17.png"
+                alt=""
+              />
+            </div>
+            <div class="estReward">
+              Est.Reward:
+              <span class="beanData1">
+                <img src="/BasketballAssets/bean.png" alt="" />
+                000000
+              </span>
+            </div>
+            <span class="scoreLon">
+              <img src="/BasketballAssets/scoreIcon.png" alt="" />
+              2345
+            </span>
+          </div>
+        </div>
+        <div class="winnerGold">
+          <div class="img2">
+            <img src="/BasketballDefaultPage/wolf.jpg" alt="" />
+          </div>
+          <div class="userData2">
+            <p class="userName">NickName</p>
+            <div class="userLevel">
+              <img
+                src="http://streamkarlive.live/streamkar/common/img/ulv/17.png"
+                alt=""
+              />
+            </div>
+            <div class="estReward">
+              Est.Reward:
+              <span class="beanData1">
+                <img src="/BasketballAssets/bean.png" alt="" />
+                000000
+              </span>
+            </div>
+            <span class="scoreLon">
+              <img src="/BasketballAssets/scoreIcon.png" alt="" />
+              2345
+            </span>
+          </div>
+        </div>
+        <div class="winnerBronze">
+          <div class="img3">
+            <img src="/BasketballDefaultPage/wolf.jpg" alt="" />
+          </div>
+          <div class="userData3">
+            <p class="userName">NickName</p>
+            <div class="userLevel">
+              <img
+                src="http://streamkarlive.live/streamkar/common/img/ulv/17.png"
+                alt=""
+              />
+            </div>
+            <div class="estReward">
+              Est.Reward:
+              <span class="beanData1">
+                <img src="/BasketballAssets/bean.png" alt="" />
+                000000
+              </span>
+            </div>
+            <span class="scoreLon">
+              <img src="/BasketballAssets/scoreIcon.png" alt="" />
+              2345
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- leaderboard remainining data here -->
+
+      <div
+        class="parentContainer"
+        id="leaderboardTabs1Data"
+        onclick="parentContainer()"
+      >
+        <div class="userDataContainer">
+          <div class="userBox1">
+            <p class="count">4.</p>
+            <div class="userNameLevel">
+              <span class="userImg">
+                <img src="/BasketballDefaultPage/wolf.jpg" alt="" />
+                <p class="nameText">Name</p>
+              </span>
+              <img
+                src="http://streamkarlive.live/streamkar/common/img/ulv/17.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="scoreIconContainer">
+            <span class="ballCount1">
+              <img src="/BasketballAssets/scoreIcon.png" alt="" />
+              <p class="ballText">2325</p>
+            </span>
+          </div>
+        </div>
+        <div class="userDataContainer">
+          <div class="userBox1">
+            <p class="count">4.</p>
+            <div class="userNameLevel">
+              <span class="userImg">
+                <img src="/BasketballDefaultPage/wolf.jpg" alt="" />
+                <p class="nameText">Name</p>
+              </span>
+              <img
+                src="http://streamkarlive.live/streamkar/common/img/ulv/17.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="scoreIconContainer">
+            <span class="ballCount1">
+              <img src="/BasketballAssets/scoreIcon.png" alt="" />
+              <p class="ballText">2325</p>
+            </span>
+          </div>
+        </div>
+        <div class="userDataContainer">
+          <div class="userBox1">
+            <p class="count">4.</p>
+            <div class="userNameLevel">
+              <span class="userImg">
+                <img src="/BasketballDefaultPage/wolf.jpg" alt="" />
+                <p class="nameText">Name</p>
+              </span>
+              <img
+                src="http://streamkarlive.live/streamkar/common/img/ulv/17.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="scoreIconContainer">
+            <span class="ballCount1">
+              <img src="/BasketballAssets/scoreIcon.png" alt="" />
+              <p class="ballText">2325</p>
+            </span>
+          </div>
+        </div>
+        <div class="userDataContainer">
+          <div class="userBox1">
+            <p class="count">4.</p>
+            <div class="userNameLevel">
+              <span class="userImg">
+                <img src="/BasketballDefaultPage/wolf.jpg" alt="" />
+                <p class="nameText">Name</p>
+              </span>
+              <img
+                src="http://streamkarlive.live/streamkar/common/img/ulv/17.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="scoreIconContainer">
+            <span class="ballCount1">
+              <img src="/BasketballAssets/scoreIcon.png" alt="" />
+              <p class="ballText">2325</p>
+            </span>
+          </div>
+        </div>
+        <div class="userDataContainer">
+          <div class="userBox1">
+            <p class="count">4.</p>
+            <div class="userNameLevel">
+              <span class="userImg">
+                <img src="/BasketballDefaultPage/wolf.jpg" alt="" />
+                <p class="nameText">Name</p>
+              </span>
+              <img
+                src="http://streamkarlive.live/streamkar/common/img/ulv/17.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="scoreIconContainer">
+            <span class="ballCount1">
+              <img src="/BasketballAssets/scoreIcon.png" alt="" />
+              <p class="ballText">2325</p>
+            </span>
+          </div>
+        </div>
+        <div class="userDataContainer">
+          <div class="userBox1">
+            <p class="count">4.</p>
+            <div class="userNameLevel">
+              <span class="userImg">
+                <img src="/BasketballDefaultPage/wolf.jpg" alt="" />
+                <p class="nameText">Name</p>
+              </span>
+              <img
+                src="http://streamkarlive.live/streamkar/common/img/ulv/17.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="scoreIconContainer">
+            <span class="ballCount1">
+              <img src="/BasketballAssets/scoreIcon.png" alt="" />
+              <p class="ballText">2325</p>
+            </span>
+          </div>
+        </div>
+        <div class="userDataContainer">
+          <div class="userBox1">
+            <p class="count">4.</p>
+            <div class="userNameLevel">
+              <span class="userImg">
+                <img src="/BasketballDefaultPage/wolf.jpg" alt="" />
+                <p class="nameText">Name</p>
+              </span>
+              <img
+                src="http://streamkarlive.live/streamkar/common/img/ulv/17.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="scoreIconContainer">
+            <span class="ballCount1">
+              <img src="/BasketballAssets/scoreIcon.png" alt="" />
+              <p class="ballText">2325</p>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="seeMoreLess">
+      <div class="seeMore" onclick="seeMoreBtn()">
+        <img src="/BasketballAssets/seeMore.png" id="seeMore" alt="" />
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="userBoxing">
+  <div class="dailyDataContainer" id="dailydataId">
+    <div class="leaderboardTag1">
+      <img src="/BasketballAssets/leaderboard.png" alt="" />
+    </div>
+    <div class="leaderboardBg1">
+      <!-- three winner rewarded data -->
+      <div class="todayYesContainer">
+        <div class="todayYesBg">
+          <div class="todaySlide">
+            <img src="/BasketballAssets/Overall.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="userContainer1">
+        <div class="winnerSilver">
+          <div class="img1">
+            <img src="/BasketballDefaultPage/wolf.jpg" alt="" />
+          </div>
+          <div class="userData1">
+            <p class="userName">NickName</p>
+            <div class="userLevel">
+              <img
+                src="http://streamkarlive.live/streamkar/common/img/ulv/17.png"
+                alt=""
+              />
+            </div>
+            <div class="estReward">
+              Est.Reward:
+              <span class="beanData1">
+                <img src="/BasketballAssets/bean.png" alt="" />
+                000000
+              </span>
+            </div>
+            <span class="scoreLon">
+              <img src="/BasketballAssets/scoreIcon.png" alt="" />
+              2345
+            </span>
+          </div>
+        </div>
+        <div class="winnerGold">
+          <div class="img2">
+            <img src="/BasketballDefaultPage/wolf.jpg" alt="" />
+          </div>
+          <div class="userData2">
+            <p class="userName">NickName</p>
+            <div class="userLevel">
+              <img
+                src="http://streamkarlive.live/streamkar/common/img/ulv/17.png"
+                alt=""
+              />
+            </div>
+            <div class="estReward">
+              Est.Reward:
+              <span class="beanData1">
+                <img src="/BasketballAssets/bean.png" alt="" />
+                000000
+              </span>
+            </div>
+            <span class="scoreLon">
+              <img src="/BasketballAssets/scoreIcon.png" alt="" />
+              2345
+            </span>
+          </div>
+        </div>
+        <div class="winnerBronze">
+          <div class="img3">
+            <img src="/BasketballDefaultPage/wolf.jpg" alt="" />
+          </div>
+          <div class="userData3">
+            <p class="userName">NickName</p>
+            <div class="userLevel">
+              <img
+                src="http://streamkarlive.live/streamkar/common/img/ulv/17.png"
+                alt=""
+              />
+            </div>
+            <div class="estReward">
+              Est.Reward:
+              <span class="beanData1">
+                <img src="/BasketballAssets/bean.png" alt="" />
+                000000
+              </span>
+            </div>
+            <span class="scoreLon">
+              <img src="/BasketballAssets/scoreIcon.png" alt="" />
+              2345
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- leaderboard remainining data here -->
+
+      <div
+        class="parentContainer"
+        id="leaderboardTabs1Data"
+        onclick="parentContainer()"
+      >
+        <div class="userDataContainer">
+          <div class="userBox1">
+            <p class="count">4.</p>
+            <div class="userNameLevel">
+              <span class="userImg">
+                <img src="/BasketballDefaultPage/wolf.jpg" alt="" />
+                <p class="nameText">Name</p>
+              </span>
+              <img
+                src="http://streamkarlive.live/streamkar/common/img/ulv/17.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="scoreIconContainer">
+            <span class="ballCount1">
+              <img src="/BasketballAssets/scoreIcon.png" alt="" />
+              <p class="ballText">2325</p>
+            </span>
+          </div>
+        </div>
+        <div class="userDataContainer">
+          <div class="userBox1">
+            <p class="count">4.</p>
+            <div class="userNameLevel">
+              <span class="userImg">
+                <img src="/BasketballDefaultPage/wolf.jpg" alt="" />
+                <p class="nameText">Name</p>
+              </span>
+              <img
+                src="http://streamkarlive.live/streamkar/common/img/ulv/17.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="scoreIconContainer">
+            <span class="ballCount1">
+              <img src="/BasketballAssets/scoreIcon.png" alt="" />
+              <p class="ballText">2325</p>
+            </span>
+          </div>
+        </div>
+        <div class="userDataContainer">
+          <div class="userBox1">
+            <p class="count">4.</p>
+            <div class="userNameLevel">
+              <span class="userImg">
+                <img src="/BasketballDefaultPage/wolf.jpg" alt="" />
+                <p class="nameText">Name</p>
+              </span>
+              <img
+                src="http://streamkarlive.live/streamkar/common/img/ulv/17.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="scoreIconContainer">
+            <span class="ballCount1">
+              <img src="/BasketballAssets/scoreIcon.png" alt="" />
+              <p class="ballText">2325</p>
+            </span>
+          </div>
+        </div>
+        <div class="userDataContainer">
+          <div class="userBox1">
+            <p class="count">4.</p>
+            <div class="userNameLevel">
+              <span class="userImg">
+                <img src="/BasketballDefaultPage/wolf.jpg" alt="" />
+                <p class="nameText">Name</p>
+              </span>
+              <img
+                src="http://streamkarlive.live/streamkar/common/img/ulv/17.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="scoreIconContainer">
+            <span class="ballCount1">
+              <img src="/BasketballAssets/scoreIcon.png" alt="" />
+              <p class="ballText">2325</p>
+            </span>
+          </div>
+        </div>
+        <div class="userDataContainer">
+          <div class="userBox1">
+            <p class="count">4.</p>
+            <div class="userNameLevel">
+              <span class="userImg">
+                <img src="/BasketballDefaultPage/wolf.jpg" alt="" />
+                <p class="nameText">Name</p>
+              </span>
+              <img
+                src="http://streamkarlive.live/streamkar/common/img/ulv/17.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="scoreIconContainer">
+            <span class="ballCount1">
+              <img src="/BasketballAssets/scoreIcon.png" alt="" />
+              <p class="ballText">2325</p>
+            </span>
+          </div>
+        </div>
+        <div class="userDataContainer">
+          <div class="userBox1">
+            <p class="count">4.</p>
+            <div class="userNameLevel">
+              <span class="userImg">
+                <img src="/BasketballDefaultPage/wolf.jpg" alt="" />
+                <p class="nameText">Name</p>
+              </span>
+              <img
+                src="http://streamkarlive.live/streamkar/common/img/ulv/17.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="scoreIconContainer">
+            <span class="ballCount1">
+              <img src="/BasketballAssets/scoreIcon.png" alt="" />
+              <p class="ballText">2325</p>
+            </span>
+          </div>
+        </div>
+        <div class="userDataContainer">
+          <div class="userBox1">
+            <p class="count">4.</p>
+            <div class="userNameLevel">
+              <span class="userImg">
+                <img src="/BasketballDefaultPage/wolf.jpg" alt="" />
+                <p class="nameText">Name</p>
+              </span>
+              <img
+                src="http://streamkarlive.live/streamkar/common/img/ulv/17.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="scoreIconContainer">
+            <span class="ballCount1">
+              <img src="/BasketballAssets/scoreIcon.png" alt="" />
+              <p class="ballText">2325</p>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="seeMoreLess">
+      <div class="seeMore1" onclick="seeMoreBtn()">
+        <img src="/BasketballAssets/seeMore.png" id="seeMore" alt="" />
+      </div>
+    </div>
+  </div>
+
+    class="overallDataContainer11"
+    id="overallDataId111"
+    style="display: none"
+  >
+    <!-- overallDataContainer of leaderboardBg  -->
+
+    <div class="leaderboardTag">
+      <img src="/BasketballAssets/leaderboard.png" alt="" />
+    </div>
+    <div class="leaderboardBg">
+      <!-- three winner rewarded data -->
+
+      <div class="userContainer">
+        <div class="winnerSilver">
+          <div class="img1">
+            <img src="/BasketballDefaultPage/wolf.jpg" alt="" />
+          </div>
+          <div class="userData1">
+            <p class="userName">NickName</p>
+            <div class="userLevel">
+              <img
+                src="http://streamkarlive.live/streamkar/common/img/ulv/17.png"
+                alt=""
+              />
+            </div>
+            <div class="estReward">
+              Est.Reward:
+              <span class="beanData1">
+                <img src="/BasketballAssets/bean.png" alt="" />
+                000000
+              </span>
+            </div>
+            <span class="scoreLon">
+              <img src="/BasketballAssets/scoreIcon.png" alt="" />
+              2345
+            </span>
+          </div>
+        </div>
+        <div class="winnerGold">
+          <div class="img2">
+            <img src="/BasketballDefaultPage/wolf.jpg" alt="" />
+          </div>
+          <div class="userData2">
+            <p class="userName">NickName</p>
+            <div class="userLevel">
+              <img
+                src="http://streamkarlive.live/streamkar/common/img/ulv/17.png"
+                alt=""
+              />
+            </div>
+            <div class="estReward">
+              Est.Reward:
+              <span class="beanData1">
+                <img src="/BasketballAssets/bean.png" alt="" />
+                000000
+              </span>
+            </div>
+            <span class="scoreLon">
+              <img src="/BasketballAssets/scoreIcon.png" alt="" />
+              2345
+            </span>
+          </div>
+        </div>
+        <div class="winnerBronze">
+          <div class="img3">
+            <img src="/BasketballDefaultPage/wolf.jpg" alt="" />
+          </div>
+          <div class="userData3">
+            <p class="userName">NickName</p>
+            <div class="userLevel">
+              <img
+                src="http://streamkarlive.live/streamkar/common/img/ulv/17.png"
+                alt=""
+              />
+            </div>
+            <div class="estReward">
+              Est.Reward:
+              <span class="beanData1">
+                <img src="/BasketballAssets/bean.png" alt="" />
+                000000
+              </span>
+            </div>
+            <span class="scoreLon">
+              <img src="/BasketballAssets/scoreIcon.png" alt="" />
+              2345
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- leaderboard remainining data here -->
+
+      <div
+        class="parentContainer"
+        id="leaderboardTabs1Data"
+        onclick="parentContainer()"
+      >
+        <div class="userDataContainer">
+          <div class="userBox1">
+            <p class="count">4.</p>
+            <div class="userNameLevel">
+              <span class="userImg">
+                <img src="/BasketballDefaultPage/wolf.jpg" alt="" />
+                <p class="nameText">Name</p>
+              </span>
+              <img
+                src="http://streamkarlive.live/streamkar/common/img/ulv/17.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="scoreIconContainer">
+            <span class="ballCount1">
+              <img src="/BasketballAssets/scoreIcon.png" alt="" />
+              <p class="ballText">2325</p>
+            </span>
+          </div>
+        </div>
+        <div class="userDataContainer">
+          <div class="userBox1">
+            <p class="count">4.</p>
+            <div class="userNameLevel">
+              <span class="userImg">
+                <img src="/BasketballDefaultPage/wolf.jpg" alt="" />
+                <p class="nameText">Name</p>
+              </span>
+              <img
+                src="http://streamkarlive.live/streamkar/common/img/ulv/17.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="scoreIconContainer">
+            <span class="ballCount1">
+              <img src="/BasketballAssets/scoreIcon.png" alt="" />
+              <p class="ballText">2325</p>
+            </span>
+          </div>
+        </div>
+        <div class="userDataContainer">
+          <div class="userBox1">
+            <p class="count">4.</p>
+            <div class="userNameLevel">
+              <span class="userImg">
+                <img src="/BasketballDefaultPage/wolf.jpg" alt="" />
+                <p class="nameText">Name</p>
+              </span>
+              <img
+                src="http://streamkarlive.live/streamkar/common/img/ulv/17.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="scoreIconContainer">
+            <span class="ballCount1">
+              <img src="/BasketballAssets/scoreIcon.png" alt="" />
+              <p class="ballText">2325</p>
+            </span>
+          </div>
+        </div>
+        <div class="userDataContainer">
+          <div class="userBox1">
+            <p class="count">4.</p>
+            <div class="userNameLevel">
+              <span class="userImg">
+                <img src="/BasketballDefaultPage/wolf.jpg" alt="" />
+                <p class="nameText">Name</p>
+              </span>
+              <img
+                src="http://streamkarlive.live/streamkar/common/img/ulv/17.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="scoreIconContainer">
+            <span class="ballCount1">
+              <img src="/BasketballAssets/scoreIcon.png" alt="" />
+              <p class="ballText">2325</p>
+            </span>
+          </div>
+        </div>
+        <div class="userDataContainer">
+          <div class="userBox1">
+            <p class="count">4.</p>
+            <div class="userNameLevel">
+              <span class="userImg">
+                <img src="/BasketballDefaultPage/wolf.jpg" alt="" />
+                <p class="nameText">Name</p>
+              </span>
+              <img
+                src="http://streamkarlive.live/streamkar/common/img/ulv/17.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="scoreIconContainer">
+            <span class="ballCount1">
+              <img src="/BasketballAssets/scoreIcon.png" alt="" />
+              <p class="ballText">2325</p>
+            </span>
+          </div>
+        </div>
+        <div class="userDataContainer">
+          <div class="userBox1">
+            <p class="count">4.</p>
+            <div class="userNameLevel">
+              <span class="userImg">
+                <img src="/BasketballDefaultPage/wolf.jpg" alt="" />
+                <p class="nameText">Name</p>
+              </span>
+              <img
+                src="http://streamkarlive.live/streamkar/common/img/ulv/17.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="scoreIconContainer">
+            <span class="ballCount1">
+              <img src="/BasketballAssets/scoreIcon.png" alt="" />
+              <p class="ballText">2325</p>
+            </span>
+          </div>
+        </div>
+        <div class="userDataContainer">
+          <div class="userBox1">
+            <p class="count">4.</p>
+            <div class="userNameLevel">
+              <span class="userImg">
+                <img src="/BasketballDefaultPage/wolf.jpg" alt="" />
+                <p class="nameText">Name</p>
+              </span>
+              <img
+                src="http://streamkarlive.live/streamkar/common/img/ulv/17.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="scoreIconContainer">
+            <span class="ballCount1">
+              <img src="/BasketballAssets/scoreIcon.png" alt="" />
+              <p class="ballText">2325</p>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="seeMoreLess">
+      <div class="seeMore" onclick="seeMoreBtn()">
+        <img src="/BasketballAssets/seeMore.png" id="seeMore" alt="" />
+      </div>
+    </div>
+  </div>
+
+  <div class="dailyContainer" id="dailyId">
+    <div class="beanPotBanner">
+      <img src="/BasketballAssets/beansPotBanner.png" alt="" />
+    </div>
+
+    <div class="beanPot">
+      <div class="switchTabs">
+        <div class="slideBtn">
+          <img src="/BasketballAssets/slideButton.png" alt="" />
+          <p class="slideUserTxt">
+            <img src="/BasketballAssets/Daily.png" alt="" />
+          </p>
+        </div>
+      </div>
+
+      <div class="beanData">
+        <img src="/BasketballAssets/bean.png" alt="" />
+        <p class="beanText">3400000</p>
+      </div>
+      <div class="beanPotInfo1">
+        <p class="beanPotText1">BEANS WILL BE REWARDED TOP 5 USERS.</p>
+      </div>
+    </div>
+    <div class="overallTabs">
+      <div class="over1" onclick="overallfun1()">
+        <img src="/2ndPage/tab-selected.gif" id="overallId1" alt="" />
+        <div class="over11">
+          <img src="/images/images/Daily.png" alt="" />
+        </div>
+      </div>
+      <div class="over2" onclick="overallfun2() ">
+        <img src="/2ndPage/tab-unselected.png" id="overallId2" alt="" />
+        <div class="over22">
+          <img src="/images/images/Overall.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+id="talentBoxingId"

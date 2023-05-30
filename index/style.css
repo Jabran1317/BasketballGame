@@ -1,0 +1,2070 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: helvitBold;
+  src: url("/Helvetica-Bold-Font.ttf");
+}
+@font-face {
+  font-family: regular2;
+  src: url("/hi_jack/Hi\ Jack.woff");
+}
+@font-face {
+  font-family: regular3;
+  src: url("/hi_jack/Hi\ Jack.woff2");
+}
+.bodyContainer {
+  background-image: url("../BasketballAssets/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* height: 100vh; */
+}
+.header {
+  background-image: url(/BasketballAssets/header.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 154vw;
+  position: relative;
+}
+.marqueeContainer {
+  position: relative;
+  top: 37vw;
+}
+.marquee11 {
+  background-color: #943d2b;
+  width: 74vw;
+  border-radius: 4vw;
+  display: flex;
+  align-items: center;
+  height: 7vw;
+  /* position: absolute;
+  top: 35vw;
+  left: 1vw; */
+}
+/* .userImg img {
+  width: 6vw;
+  height: 6vw;
+  display: flex;
+  margin-left: 0.5vw;
+} */
+.textBean {
+  color: white;
+  display: flex;
+  margin-left: 3vw;
+  align-items: center;
+  font-size: 3vw;
+  font-family: helvitBold;
+}
+.textBean img {
+  width: 4vw;
+  height: 4vw;
+  margin-left: 0.5vw;
+}
+.jumpCharac {
+  position: absolute;
+  width: 34vw;
+  height: 38vw;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 42vw;
+}
+.jumpingCharac {
+  position: absolute;
+  width: 100vw;
+  height: 141vw;
+  left: 0;
+  bottom: 11vw;
+}
+.throwContainer {
+  gap: 22vw;
+  display: flex;
+  margin-top: 108vw;
+  font-family: helvitBold;
+  font-size: 3.5vw;
+  justify-content: center;
+}
+.throw {
+  background-image: url("/BasketballAssets/numberOfThrows.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 52vw;
+  height: 20.8vw;
+  color: white;
+  text-align: center;
+  padding-top: 2.5vw;
+}
+.throwSent {
+  background-image: url("/BasketballAssets/throw.gif");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 21.2vw;
+  height: 11vw;
+  margin-top: -11vw;
+  margin-left: -1vw;
+}
+.throw1 {
+  background-image: url(/BasketballAssets/throwsSent.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 45vw;
+  height: 15.8vw;
+  color: white;
+  padding-top: 2vw;
+  /* text-align: center; */
+  padding-left: 3vw;
+}
+.input-chances {
+  width: 12vw;
+  height: 4vw;
+  background: rgba(7, 7, 177, 0.596);
+  outline: none;
+  border: none;
+  border-radius: 22vw;
+  text-align: center;
+  cursor: pointer;
+  font-size: 2.8vw;
+}
+.ballOnTarget {
+  position: absolute;
+  bottom: 10vw;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: url("/BasketballAssets/throwButton.gif");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 19vw;
+  height: 19vw;
+}
+.clickHere img {
+  width: 10vw;
+  height: 10vw;
+  margin-left: 12vw;
+  /* margin: auto; */
+  margin-top: 8vw;
+}
+.threeTabs {
+  display: flex;
+  margin-top: -9vw;
+  /* margin: 27vw auto; */
+  justify-content: space-evenly;
+}
+.fieldGoal img {
+  width: 31vw;
+  height: 15vw;
+}
+.growth img {
+  width: 31vw;
+  height: 15vw;
+}
+.gifting img {
+  width: 31vw;
+  height: 15vw;
+}
+.progressBarContainer {
+  background-image: url("/BasketballDefaultPage/mySuccesfulAttempts.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 93vw;
+  height: 54vw;
+  margin: 0 auto;
+  color: yellow;
+  font-family: helvitBold;
+  overflow: hidden;
+}
+.iButtonB img {
+  width: 9vw;
+  height: 9vw;
+  margin-left: 76vw;
+  margin-top: 9vw;
+}
+.progressBarText {
+  text-align: center;
+  margin-top: -6vw;
+  font-family: regular2;
+  font-size: 3vw;
+}
+
+.iButtonA img {
+  width: 8vw;
+  height: 8vw;
+  margin-left: 4vw;
+}
+.progressBarBg {
+  background-image: url(/BasketballDefaultPage/progressBar.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 76vw;
+  height: 10vw;
+  margin: 0 auto;
+  display: block;
+}
+
+.currentPosition img {
+  width: 10vw;
+  height: 10vw;
+  margin-left: 21.5vw;
+  display: block;
+  margin-top: -8vw;
+}
+.ballContainer {
+  display: flex;
+}
+.completedBall1 img {
+  width: 10vw;
+  height: 10vw;
+}
+.completedBall2 img {
+  width: 10vw;
+  height: 10vw;
+  margin-left: 3.2vw;
+}
+.completedBall3 img {
+  width: 10vw;
+  height: 10vw;
+  margin-left: 4vw;
+}
+.completedBall4 img {
+  width: 10vw;
+  height: 10vw;
+  margin-left: 3.2vw;
+}
+.completedBall5 img {
+  width: 10vw;
+  height: 10vw;
+  margin-left: 4vw;
+}
+.completedBall6 img {
+  width: 10vw;
+  height: 10vw;
+  margin-left: 3.5vw;
+}
+.beanPot {
+  background-image: url(/BasketballAssets/beansPot.gif);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 87vw;
+  height: 53vw;
+  margin: -2.4vw auto;
+}
+.beanPot001 {
+  background-image: url(/BasketballAssets/beansPot.gif);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 87vw;
+  height: 53vw;
+  margin: -2.2vw auto;
+}
+.beanPot002 {
+  background-image: url(/BasketballAssets/beansPot.gif);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 87vw;
+  height: 53vw;
+  margin: -2.2vw auto;
+}
+.beanPot1123 {
+  background-image: url(/BasketballAssets/beansPot.gif);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 87vw;
+  height: 53vw;
+  margin: -7.2vw auto;
+}
+.beanPot1234 {
+  background-image: url(/BasketballAssets/beansPot.gif);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 87vw;
+  height: 53vw;
+  margin: -7.2vw auto;
+}
+.beanPotBanner img {
+  width: 74vw;
+  height: 11vw;
+  margin: -4.2vw auto;
+  display: block;
+}
+.beanPotBanner {
+  margin-top: 4vw;
+}
+.beanPotInfo {
+  background-image: url("/BasketballAssets/beansPotInfo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 87vw;
+  height: 6vw;
+  margin: 3vw auto;
+}
+.beanPotText {
+  color: rgb(199, 184, 184);
+  font-size: 1.6vw;
+  font-family: helvitBold;
+  text-align: center;
+  padding-top: 1.5vw;
+}
+.beanData {
+  color: rgb(3, 3, 3);
+  font-size: 2.5vw;
+  font-family: regular2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -6vw auto;
+  margin-left: -3vw;
+  padding-top: 7vw;
+}
+.beanData101 {
+  color: rgb(3, 3, 3);
+  font-size: 2.5vw;
+  font-family: regular2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -6vw auto;
+  margin-left: -3vw;
+  padding-top: 5vw;
+}
+.beanData001 {
+  color: rgb(3, 3, 3);
+  font-size: 2.5vw;
+  font-family: regular2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -6vw auto;
+  margin-left: -3vw;
+  padding-top: 7vw;
+}
+.beanData img {
+  width: 4vw;
+  height: 4vw;
+}
+.beanData101 img {
+  width: 4vw;
+  height: 4vw;
+}
+.beanData001 img {
+  width: 4vw;
+  height: 4vw;
+}
+.beanText {
+  font-size: 4vw;
+}
+.leaderboardBg {
+  background-image: url(/BasketballDefaultPage/leaderboardBg2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 90vw;
+  height: 144vw;
+  margin: -14vw auto;
+}
+.leaderboardTag img {
+  width: 69vw;
+  height: 11vw;
+  margin: 6.5vw auto;
+  display: block;
+}
+.dailyDataContainer {
+  margin-top: 7vw;
+}
+.userContainer {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 15vw;
+}
+.userContainer007 {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 15vw;
+}
+.userContainer1 {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 4.5vw;
+}
+.winnerSilver {
+  background-image: url("/BasketballAssets/silver.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 17vw;
+  /* height: 17vw; */
+  margin-top: 7vw;
+  margin-left: 1vw;
+}
+.winnerGold {
+  background-image: url("/BasketballAssets/gold.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 18vw;
+  /* height: 18vw; */
+  margin-left: 8vw;
+}
+.winnerBronze {
+  background-image: url("/BasketballAssets/bronze.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 17vw;
+  /* height: 17vw; */
+  margin-top: 6vw;
+  margin-left: 5vw;
+}
+.img1 img {
+  width: 9vw;
+  height: 9vw;
+  border-radius: 50%;
+  margin-top: 6.6vw;
+  margin-left: 6vw;
+}
+.img2 img {
+  width: 10.5vw;
+  height: 10.5vw;
+  border-radius: 50%;
+  margin-top: 6.7vw;
+  margin-left: 2.1vw;
+}
+.img3 img {
+  width: 9.9vw;
+  height: 9.8vw;
+  border-radius: 50%;
+  margin-top: 7vw;
+  margin-left: 1.9vw;
+}
+.userData1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: helvitBold;
+  margin-left: 2vw;
+  line-height: 1vw;
+}
+.userData2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: helvitBold;
+  margin-left: 1vw;
+  margin-left: -3vw;
+  line-height: 1vw;
+}
+.userData3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: helvitBold;
+  margin-left: -5vw;
+  line-height: 1vw;
+}
+
+.userName {
+  background-color: #102e74;
+  color: white;
+  font-size: 2vw;
+  border-radius: 3vw;
+  width: 16vw;
+  height: 3vw;
+  line-height: 3.5vw;
+  /* padding-top: 1vw; */
+  text-align: center;
+}
+.userLevel img {
+  width: 10vw;
+  height: 2.5vw;
+  margin-top: -1vw;
+}
+.estReward {
+  color: white;
+  display: flex;
+  align-items: flex-end;
+  font-size: 1.8vw;
+}
+.beanData1 {
+  display: flex;
+  align-items: flex-end;
+  /* font-size: 1.5vw; */
+  color: white;
+}
+.beanData1 img {
+  width: 2vw;
+  height: 2vw;
+}
+.scoreLon img {
+  width: 4vw;
+  height: 4vw;
+}
+.scoreLon {
+  color: white;
+  display: flex;
+  align-items: center;
+  font-size: 2.5vw;
+}
+.userDataContainer {
+  height: 8.5vw;
+  background-color: #09548d;
+  width: 80vw;
+  margin: 0vw auto;
+  border-radius: 5vw;
+}
+.userBox1 {
+  margin-top: 3.5vw;
+}
+.count {
+  color: white;
+  padding-left: 2vw;
+  margin-top: 2vw;
+  font-size: 2.2vw;
+  font-family: "helvitBold";
+}
+/* .userImg {
+  color: white;
+  display: flex;
+} */
+.userNameLevel {
+  display: flex;
+  align-items: center;
+  margin-top: -6.8vw;
+  margin-left: 5vw;
+  font-family: helvitBold;
+}
+.userNameLevel img {
+  width: 9vw;
+  height: 2vw;
+  /* display: flex; */
+  /* margin-left: 1vw; */
+}
+.userImg {
+  color: white;
+  display: flex;
+  align-items: center;
+  margin-top: 0.6vw;
+  width: 17vw;
+}
+.userImg img {
+  width: 5vw;
+  height: 5vw;
+  border-radius: 4vw;
+}
+.nameText {
+  padding-left: 1vw;
+  font-size: 2vw;
+}
+.scoreIconContainer {
+  display: flex;
+  /* float: left; */
+  align-items: center;
+  position: relative;
+  left: 62vw;
+  top: -6.5vw;
+}
+.ballCount1 {
+  color: white;
+  display: flex;
+  align-items: center;
+  font-family: "helvitBold";
+  font-size: 2.5vw;
+}
+.ballCount1 img {
+  width: 5vw;
+  height: 5vw;
+}
+.ballText {
+  padding-left: 0.5vw;
+  font-size: 2vw;
+}
+.parentContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vw;
+  margin-top: 3vw;
+  overflow: hidden;
+  height: 69vw;
+}
+.parentContainer001 {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vw;
+  margin-top: 3vw;
+  overflow: hidden;
+  height: 69vw;
+}
+.seeMore img {
+  width: 19vw;
+  height: 8vw;
+  padding-top: 0vw;
+  margin: -8vw auto;
+  display: block;
+}
+.seeMore02 img {
+  width: 19vw;
+  height: 8vw;
+  padding-top: 0vw;
+  margin: 3vw auto;
+  display: block;
+}
+.seeMore001 img {
+  width: 19vw;
+  height: 8vw;
+  padding-top: 0vw;
+  margin: 6vw auto;
+  display: block;
+}
+.seeMore1 img {
+  width: 19vw;
+  height: 8vw;
+  padding-top: 6vw;
+  margin: 0 auto;
+  display: block;
+}
+.seeMore007 img {
+  width: 19vw;
+  height: 8vw;
+  padding-top: 6vw;
+  margin: 0 auto;
+  display: block;
+}
+
+.rewardGuide img {
+  width: 9vw;
+  height: 8vw;
+  margin-top: -36vw;
+  display: block;
+}
+.rewardHistory img {
+  width: 10vw;
+  height: 10vw;
+  float: right;
+  margin-top: -10vw;
+}
+.popupContainer {
+  background-image: url(/popupAndRest/guideBg.png);
+  width: 68vw;
+  height: 106vw;
+  position: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+  top: vw;
+  top: 14vw;
+  left: 15.5vw;
+}
+.guideInfobg {
+  background-image: url(/popupAndRest/guideRewardInfoDiplayBg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 57vw;
+  height: 80vw;
+  margin: 1vw 5vw;
+}
+.overlay {
+  position: fixed;
+  top: 0vw;
+  left: 0vw;
+  width: 100vw;
+  height: 180vw;
+  background: #000000d9;
+  z-index: 3;
+  visibility: hidden;
+}
+.overlayAddClass {
+  visibility: visible;
+}
+.leftBtn img {
+  width: 22vw;
+  height: 3vw;
+  margin: 1.2vw auto;
+  display: block;
+  opacity: 0.5;
+}
+.leftBtn {
+  background-image: url(/popupAndRest/leftButton.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 32vw;
+  height: 8vw;
+}
+.rightBtn img {
+  width: 22vw;
+  height: 3vw;
+  margin: 1vw auto;
+  display: block;
+}
+.rightBtn {
+  background-image: url(/popupAndRest/rightButton.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 32vw;
+  height: 6vw;
+  display: block;
+}
+.twoInnerTabs {
+  display: flex;
+  /* justify-content: space-around; */
+  margin-top: 9vw;
+  margin-left: 2.5vw;
+}
+.guideTag img {
+  display: block;
+  width: 49vw;
+  height: 9vw;
+  margin: -6vw auto;
+}
+.closeBtn img {
+  width: 9vw;
+  height: 9vw;
+  margin: 9vw auto;
+  display: block;
+}
+.leftBtnData1 {
+  color: white;
+  /* text-align: center; */
+  font-family: helvitBold;
+  font-size: 2.5vw;
+  padding-top: 3vw;
+  padding-left: 6vw;
+  width: 53vw;
+  line-height: 4.5vw;
+}
+.rightBtnData1 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10vw;
+  margin-left: -29vw;
+  gap: 6vw;
+
+  overflow-y: scroll;
+  gap: 6vw;
+  height: 65vw;
+}
+/* .rightBtnData1 ul li {
+  color: white;
+  font-family: helvitBold;
+  font-size: 2.8vw;
+  width: 35vw;
+  padding-top: 3vw;
+  margin-left: -17vw;
+} */
+.a {
+  height: 69vw;
+  overflow-y: scroll;
+  /* padding-top: 3vw; */
+  margin-top: 6vw;
+}
+
+.color {
+  color: yellow;
+  font-size: 2.8vw;
+}
+h3 {
+  color: rgb(248, 243, 243);
+  font-size: 3vw;
+  font-family: "helvitBold";
+}
+
+#main-body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+table {
+  text-align: center;
+}
+.popupData {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0/80%);
+  border-radius: 2vw;
+  font-size: 2vw;
+  font-weight: 900;
+  font-family: cursive;
+  position: fixed;
+  z-index: 8;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.popupBox {
+  background-image: url("/popupAndRest/taskGameBg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 81vw;
+  height: 73vw;
+  position: relative;
+  left: 10vw;
+  top: 14vw;
+}
+.display {
+  display: none;
+}
+.closebtn1 img {
+  width: 10vw;
+  height: 10vw;
+  /* height: 10vw; */
+  margin: 6vw auto;
+  /* position: absolute; */
+  display: block;
+}
+.ibuttonPopup {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgb(0 0 0/80%);
+  z-index: 8;
+}
+.ibuttonb1 img {
+  width: 86vw;
+  height: 50vw;
+  margin: 21vw auto;
+  display: block;
+}
+.iBtnClose img {
+  width: 10vw;
+  height: 10vw;
+  margin: 6vw auto;
+  display: block;
+}
+.ibtnadata {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgb(0 0 0/80%);
+  z-index: 8;
+}
+.ibtnabg img {
+  width: 80vw;
+  height: 50vw;
+  margin: 28vw auto;
+  display: block;
+}
+.ibtnaclose img {
+  width: 10vw;
+  height: 10vw;
+  margin: 7vw auto;
+  display: block;
+}
+.recordData {
+  display: flex;
+  justify-content: space-around;
+  background-color: #0b3379;
+  width: 66vw;
+  border-radius: 5vw;
+  height: 7vw;
+  margin-left: 7.5vw;
+  padding-top: 1vw;
+}
+.rewardRecord img {
+  width: 84vw;
+  height: 14vw;
+  /* margin: -7vw -1.5vw; */
+  /* display: block; */
+  /* z-index: 8; */
+}
+.titleData {
+  color: skyblue;
+  display: flex;
+  justify-content: space-evenly;
+}
+.date {
+  color: skyblue;
+  line-height: 0vw;
+  text-align: center;
+  font-size: 2.5vw;
+  margin-top: -1vw;
+}
+.date1 {
+  font-size: 2.8vw;
+}
+.dataImg img {
+  width: 5vw;
+  height: 5vw;
+  margin-top: 0.5vw;
+}
+.rewardImg1 img {
+  width: 8vw;
+  height: 6vw;
+  border: 1px blue solid;
+}
+.rewardImg1 {
+  color: rgb(248, 248, 250);
+  font-size: 2.5vw;
+  display: flex;
+  align-items: center;
+}
+.recordContainer {
+  overflow-y: scroll;
+  height: 36vw;
+}
+.boxing {
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+}
+.growthBg {
+  background-image: url(/popupAndRest/taskGameBg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 86vw;
+  height: 70vw;
+  margin: -14vw auto;
+  overflow: hidden;
+  position: relative;
+  z-index: 5;
+}
+.infobg {
+  background-image: url(/BasketballAssets/infoBg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 82vw;
+  height: 14.4vw;
+  /* margin-top: 7vw; */
+  margin: 8vw auto;
+}
+.infobg img {
+  width: 21vw;
+  height: 20vw;
+  margin-left: -2.3vw;
+  margin-top: -1vw;
+}
+.growthTaskBanner {
+  background-image: url(/BasketballAssets/taskBanner.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 90vw;
+  height: 14vw;
+  margin: 7vw auto;
+  z-index: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+  z-index: 6;
+}
+.infoDisplay {
+  background-image: url("/BasketballAssets/infoDisplay.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 40vw;
+  height: 10vw;
+  line-height: 7vw;
+  font-size: 2.8vw;
+  color: white;
+  text-align: center;
+}
+.growthTalent img {
+  width: 36vw;
+  height: 13vw;
+  width: 36vw;
+  height: 13vw;
+  position: relative;
+  /* display: flex; */
+  top: -4vw;
+}
+.infoText {
+  color: white;
+  font-size: 2.8vw;
+  font-family: "helvitBold";
+  margin-top: -16vw;
+  width: 59vw;
+  margin-left: 18vw;
+  text-align: center;
+}
+.tokenBoxing {
+  display: flex;
+  flex-direction: column;
+  gap: 5vw;
+}
+.tokenDataContainer {
+  background-color: #114993;
+  width: 70vw;
+  height: 12vw;
+  border-radius: 3vw;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: -3vw;
+}
+.num {
+  font-size: 3vw;
+  font-family: "helvitBold";
+  color: white;
+}
+.tickMark img {
+  width: 8vw;
+  height: 8vw;
+}
+.tokenText {
+  color: white;
+  font-family: helvitBold;
+  font-size: 3vw;
+  width: 28vw;
+}
+.tokenData {
+  background-color: #1a7eba;
+  width: 20vw;
+  height: 8vw;
+  display: block;
+  color: white;
+  font-size: 3.5vw;
+  border-radius: 3vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tokenData img {
+  width: 8vw;
+  height: 8vw;
+}
+.growthProgressBg {
+  background-image: url(/BasketballAssets/progressBarBg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 80vw;
+  height: 24vw;
+  margin: 14vw auto;
+  overflow: hidden;
+}
+.growthProgressBar img {
+  margin: 10vw 17vw;
+  width: 50vw;
+  height: 8vw;
+}
+.yourGrowthBg {
+  background-image: url(/2ndPage/yourGrowthBg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 37vw;
+  margin: -28vw auto;
+  position: relative;
+  z-index: 1;
+}
+.tokenInfo {
+  background-image: url(/2ndPage/tokenAsscelerationInfoBg.gif);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 84vw;
+  height: 23vw;
+  margin: -15vw auto;
+  overflow: hidden;
+  position: relative;
+}
+.tokenContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 12vw;
+}
+.tokeninfo1 {
+  background-image: url("/popupAndRest/leftButton.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 39vw;
+  height: 20vw;
+}
+.tokeninfo2 {
+  background-image: url("/popupAndRest/rightButton.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 39vw;
+  height: 20vw;
+}
+.token1 img {
+  width: 5vw;
+  height: 5vw;
+}
+.token1 {
+  color: white;
+  font-size: 2.2vw;
+  font-family: "helvitBold";
+  display: flex;
+  align-items: center;
+  padding-top: 1vw;
+  padding-left: 2vw;
+}
+.tokenText1 {
+  color: white;
+  font-size: 2.5vw;
+  font-family: "helvitBold";
+  padding-left: 3vw;
+}
+.footer img {
+  width: 100vw;
+  height: 39vw;
+  margin: 0 auto -1vw;
+}
+.giftBg {
+  background-image: url(/2ndPage/event-gift-bg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 90vw;
+  height: 70vw;
+  margin: -7vw auto;
+}
+.eventGift img {
+  width: 60vw;
+  height: 10vw;
+  margin: 3vw auto;
+  display: block;
+}
+.giftBg1 {
+  background-image: url(/2ndPage/event-gift-display.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 29vw;
+  margin-top: -41vw;
+}
+.giftNameContainer {
+  display: flex;
+  /* margin: 0 auto; */
+  justify-content: space-evenly;
+  padding-top: 7vw;
+  font-size: 2.5vw;
+  font-family: "helvitBold";
+  text-align: center;
+}
+.giftName1 {
+  display: flex;
+  flex-direction: column;
+}
+.g1 {
+  color: white;
+}
+.g2 {
+  color: white;
+  display: flex;
+}
+.g2 img {
+  width: 5vw;
+  height: 5vw;
+}
+.giftBall {
+  width: 15vw;
+  height: 15vw;
+  position: absolute;
+  right: 1vw;
+  top: 1v;
+  top: 200vw;
+}
+.giftTabsContainer {
+  display: flex;
+  justify-content: space-around;
+  margin-top: -2vw;
+}
+.giftUser img {
+  width: 28vw;
+  height: 9.5vw;
+}
+.giftTalent img {
+  width: 28vw;
+  height: 9.5vw;
+}
+.userText img {
+  width: 22vw;
+  height: 7vw;
+  display: block;
+  margin-top: -12.4vw;
+  margin-left: 3vw;
+}
+.talentText img {
+  width: 21vw;
+  height: 6vw;
+  display: block;
+  margin-top: -12.5vw;
+  margin-left: 3.5vw;
+}
+.switchTabs {
+  background-image: url(/2ndPage/rewards-slide-bg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30vw;
+  height: 6vw;
+  margin: 0 auto;
+  position: relative;
+  top: 3vw;
+}
+.switchTabs01 {
+  background-image: url(/BasketballAssets/slideButtonBgDailyOverall.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 40vw;
+  height: 8vw;
+  margin: -2vw auto;
+  position: relative;
+  top: 4.2vw;
+  display: flex;
+  left: 2vw;
+}
+.switchTabs1 {
+  background-image: url(/2ndPage/rewards-slide-bg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30vw;
+  height: 6vw;
+  margin: 0 auto;
+  position: relative;
+  top: 1vw;
+  display: flex;
+}
+.switchTabs11 {
+  background-image: url(/BasketballAssets/slideButtonBgDailyOverall.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 39vw;
+  height: 10vw;
+  margin: 0 auto;
+  position: relative;
+  top: 4vw;
+  display: flex;
+}
+.slideBtn1 {
+  background-image: url(/BasketballAssets/slideButton.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 19vw;
+  height: 18vw;
+}
+.slideBtn011 {
+  background-image: url(/BasketballAssets/slideButton.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 21vw;
+  height: 13vw;
+  font-family: "regular2";
+  color: rgb(8 1 1);
+  font-size: 4vw;
+  text-align: center;
+  padding-top: 1vw;
+}
+.slideBtn0112 {
+  background-image: url(/BasketballAssets/slideButton.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 23vw;
+  height: 8vw;
+  margin-left: 2vw;
+  font-family: "regular2";
+  font-size: 3.5vw;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding-top: 2.2vw;
+}
+.slideBtn img {
+  width: 16vw;
+  height: 5vw;
+}
+.slideBtn2 {
+  background-image: url(/BasketballAssets/slideButton.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 19vw;
+  height: 7vw;
+  margin-left: 1vw;
+}
+.slideUserTxt1 {
+  font-size: 3.5vw;
+  font-family: regular2;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin-top: 1.5vw;
+}
+.slideUserTxt2 {
+  color: rgb(27, 4, 4);
+  margin-top: 1vw;
+  font-size: 3.5vw;
+  padding-left: 2vw;
+  font-family: "regular2";
+}
+.slideUserTxt img {
+  width: 15vw;
+  height: 3vw;
+  margin-top: -9vw;
+  margin-left: 1vw;
+  display: block;
+}
+/* .slideUserTxt2 img {
+  width: 15vw;
+  height: 3vw;
+  margin-top: -9vw;
+  margin-left: 1vw;
+  display: block;
+} */
+/* .slideUserTxt2 {
+  color: white;
+  margin-top: -5.5vw;
+  font-size: 3.5vw;
+  padding-left: 3vw;
+  font-family: "helvitBold";
+} */
+.beanPotInfo1 {
+  background-image: url(/BasketballAssets/beansPotInfo2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 73vw;
+  height: 30vw;
+  margin: 36vw auto;
+}
+.beanPotText1 {
+  color: rgb(199, 184, 184);
+  font-size: 2.5vw;
+  font-family: helvitBold;
+  text-align: center;
+  padding-top: 1.5vw;
+}
+.over1 img {
+  width: 28vw;
+  height: 9.5vw;
+}
+.over11 img {
+  width: 22vw;
+  height: 6vw;
+  margin: -8.5vw 3vw;
+  display: block;
+}
+.over2 img {
+  width: 28vw;
+  height: 9.5vw;
+}
+.over22 img {
+  width: 22vw;
+  height: 6vw;
+  margin-top: -9vw;
+  display: block;
+  margin-left: 3vw;
+}
+.overallTabs {
+  display: flex;
+  margin-top: 13vw;
+  justify-content: space-evenly;
+}
+.leaderboardTag1 img {
+  width: 69vw;
+  height: 11vw;
+  margin: 13vw auto;
+  display: block;
+}
+.leaderboardBg1 {
+  background-image: url(/BasketballDefaultPage/leaderboardBg2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 90vw;
+  height: 144vw;
+  margin: -20vw auto;
+}
+.todayYesBg {
+  background-image: url(/BasketballAssets/slideButtonBgTodayYesterday.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 45vw;
+  height: 11vw;
+  margin: 0 auto;
+  position: relative;
+  top: 8vw;
+}
+.todayYesBg001 {
+  background-image: url(/BasketballAssets/slideButtonBgTodayYesterday.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 45vw;
+  height: 11vw;
+  margin: 0 auto;
+  position: relative;
+  top: 8vw;
+}
+.todaySlide {
+  background-image: url(/BasketballAssets/slideButton.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 22vw;
+  height: 11vw;
+  position: absolute;
+}
+.todaySlide001 {
+  background-image: url(/BasketballAssets/slideButton.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 22vw;
+  height: 11vw;
+  position: absolute;
+}
+.toSlide001 {
+  font-size: 3vw;
+  text-align: center;
+  font-family: "regular2";
+  margin-top: 2vw;
+  color: white;
+}
+.toSlide002 {
+  font-size: 3vw;
+  text-align: center;
+  font-family: "regular2";
+  margin-top: 2.5vw;
+  color: #0f0202;
+}
+.todaySlide002 {
+  background-image: url(/BasketballAssets/slideButton.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 22vw;
+  height: 11vw;
+  position: absolute;
+  left: 22.6vw;
+}
+.todaySlide img {
+  width: 17vw;
+  height: 5vw;
+  margin: 1.4vw auto;
+  display: block;
+}
+.todayText {
+  color: white;
+  font-size: 4vw;
+  text-align: center;
+  font-family: "regular2";
+  margin-top: 1.4vw;
+}
+/* .todaySlide img {
+  width: 15vw;
+  height: 4vw;
+  margin: 1.5vw auto;
+  display: block;
+} */
+.yestersdaySlide {
+  background-image: url(/BasketballAssets/slideButton.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 22vw;
+  height: 8vw;
+  margin-left: 23vw;
+}
+.yestersdayText {
+  color: white;
+  font-family: "regular2";
+  font-size: 3vw;
+  text-align: center;
+  padding-top: 2.5vw;
+}
+.overallDataContainer1 {
+  margin-top: -6vw;
+}
+.opacity {
+  opacity: 0;
+}
+.opacity1 {
+  opacity: 0;
+}
+.seeLess1 img {
+  width: 19vw;
+  height: 8vw;
+  margin-top: -8vw;
+  margin-left: 41vw;
+  display: block;
+}
+.seeLess02 img {
+  width: 19vw;
+  height: 8vw;
+  margin-top: 3vw;
+  margin-left: 36vw;
+  display: block;
+}
+
+.seeLess001 img {
+  width: 19vw;
+  height: 8vw;
+  margin-top: 6vw;
+  margin-left: 40.5vw;
+  display: block;
+}
+.dailyLeaderboard {
+  background-image: url("/popupAndRest/rewardDropdownButton.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 55vw;
+  height: 5vw;
+}
+.overallLeaderboard {
+  background-image: url("/popupAndRest/rewardDropdownButton.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 55vw;
+  height: 4vw;
+}
+
+.overallLeaderboardText img {
+  width: 5vw;
+  height: 3vw;
+  margin-top: -3.3vw;
+  margin-right: 1vw;
+}
+
+.overallLeaderboardText {
+  font-size: 3vw;
+  font-family: helvitBold;
+  padding-top: 1vw;
+  padding-left: 2vw;
+  color: white;
+}
+.fieldgoalLeaderboard {
+  background-image: url("/popupAndRest/rewardDropdownButton.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 55vw;
+  height: 4vw;
+}
+
+.fieldgoalLeaderboardText img {
+  width: 5vw;
+  height: 3vw;
+  margin-top: -3.3vw;
+  margin-right: 1vw;
+}
+
+.fieldgoalLeaderboardText {
+  font-size: 3vw;
+  font-family: helvitBold;
+  padding-top: 1vw;
+  padding-left: 2vw;
+  color: white;
+}
+.dailyLeaderboardText img {
+  width: 5vw;
+  height: 3vw;
+  margin-top: -3.3vw;
+  margin-right: 1vw;
+}
+
+.dailyLeaderboardText {
+  font-size: 3vw;
+  font-family: helvitBold;
+  padding-top: 1vw;
+  padding-left: 2vw;
+  color: white;
+}
+
+.fieldGoalLeaderboard {
+  background-image: url("/popupAndRest/rewardDropdownButton.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 70vw;
+  height: 4vw;
+}
+.tabsdailybg {
+  background-image: url("/2ndPage/rewards-slide-bg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30vw;
+  height: 10vw;
+  margin: 0 auto;
+  display: block;
+}
+.tabsdailybg1 {
+  background-image: url("/2ndPage/rewards-slide-bg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30vw;
+  height: 10vw;
+  margin: 0 auto;
+  display: block;
+}
+.tabsdailybg11 {
+  background-image: url("/2ndPage/rewards-slide-bg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30vw;
+  height: 10vw;
+  margin: 0 auto;
+  display: block;
+}
+.tabsDailyUser {
+  background-image: url("/BasketballAssets/slideButton.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 15vw;
+  height: 5vw;
+  margin-left: 0vw;
+  margin-top: -16vw;
+}
+.tabsDailyUser1 {
+  background-image: url("/BasketballAssets/slideButton.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 15vw;
+  height: 5vw;
+  margin-left: 0vw;
+  margin-top: -16vw;
+}
+.tabsDailyUser11 {
+  background-image: url("/BasketballAssets/slideButton.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 15vw;
+  height: 5vw;
+  margin-left: 0vw;
+  margin-top: -16vw;
+}
+.tabsDailyTalent {
+  background-image: url("/BasketballAssets/slideButton.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 15vw;
+  height: 5vw;
+  margin-left: 15vw;
+  margin-top: -5vw;
+}
+.tabsDailyTalent1 {
+  background-image: url("/BasketballAssets/slideButton.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 15vw;
+  height: 5vw;
+  margin-left: 15vw;
+  margin-top: -5vw;
+}
+.tabsDailyTalent11 {
+  background-image: url("/BasketballAssets/slideButton.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 15vw;
+  height: 5vw;
+  margin-left: 15vw;
+  margin-top: -5vw;
+}
+.textUser {
+  color: white;
+  font-family: "helvitBold";
+  font-size: 3.5vw;
+  margin-top: -5.5vw;
+  padding-top: 0.5vw;
+  margin-left: 3vw;
+}
+.textUser1 {
+  color: white;
+  font-family: "helvitBold";
+  font-size: 3.5vw;
+  margin-top: -5.5vw;
+  margin-left: 3vw;
+}
+.textUser11 {
+  color: white;
+  font-family: "helvitBold";
+  font-size: 3.5vw;
+  margin-top: -5.5vw;
+  margin-left: 3vw;
+}
+.textTalent {
+  color: white;
+  font-family: "helvitBold";
+  font-size: 3.5vw;
+  margin-top: -5vw;
+  margin-left: 1vw;
+  padding-top: 1vw;
+}
+.textTalent1 {
+  color: white;
+  font-family: "helvitBold";
+  font-size: 3.5vw;
+  margin-top: -5vw;
+  margin-left: 1vw;
+  padding-top: 1vw;
+}
+.textTalent11 {
+  color: white;
+  font-family: "helvitBold";
+  font-size: 3.5vw;
+  margin-top: -5vw;
+  margin-left: 1vw;
+  padding-top: 1vw;
+}
+.dailyLeaderboardContainer {
+  margin-top: 20vw;
+}
+.overallLeaderboardContainer {
+  margin-top: 20vw;
+}
+.fieldgoalLeaderboardContainer {
+  margin-top: 20vw;
+}
+.dropBtn {
+  background-image: url("/popupAndRest/drop.png");
+  width: 5vw;
+  height: 3vw;
+  /* margin-top: -3.3vw;
+  margin-right: 16vw; */
+}
+.leaderboardImg img {
+  width: 23vw;
+  height: 14vw;
+  margin-top: -1vw;
+}
+.overallLeaderboardImg img {
+  width: 23vw;
+  height: 14vw;
+  margin-top: -1vw;
+}
+.fieldgoalLeaderboardImg img {
+  width: 23vw;
+  height: 14vw;
+  margin-top: -1vw;
+}
+.leaderboardText {
+  color: white;
+  font-size: 2.5vw;
+  font-family: "helvitBold";
+  width: 53vw;
+  padding-left: 2vw;
+  padding-top: 0vw;
+  line-height: 3vw;
+}
+.leaderboardText1 {
+  color: white;
+  font-size: 2.5vw;
+  font-family: "helvitBold";
+  width: 53vw;
+  padding-left: 2vw;
+  padding-top: 0vw;
+  line-height: 3vw;
+}
+.leaderboardText11 {
+  color: white;
+  font-size: 2.5vw;
+  font-family: "helvitBold";
+  width: 50vw;
+  padding-left: 3vw;
+  padding-top: 0vw;
+  line-height: 3.5vw;
+  text-align: justify;
+}
+table {
+  text-align: center;
+  width: 19vw;
+  font-size: 2.5vw;
+  width: 53vw;
+  color: white;
+  margin-left: 2vw;
+  overflow-y: scroll;
+  /* height: 33vw; */
+  font-family: "helvitBold";
+}
+.leaderboardUserContainer {
+  display: block;
+  overflow-y: scroll;
+  height: 49vw;
+  margin-top: -2vw;
+}
+.overallLeaderboardUserContainer {
+  display: block;
+  overflow-y: scroll;
+  height: 49vw;
+  margin-top: -2vw;
+}
+.fieldgoalLeaderboardUserContainer {
+  display: block;
+  overflow-y: scroll;
+  height: 49vw;
+  margin-top: -2vw;
+}
+.img11 img {
+  width: 18vw;
+  height: 17vw;
+}
+.img112 img {
+  width: 20vw;
+  height: 18vw;
+}
+.img12 img {
+  width: 20vw;
+  height: 18vw;
+}
+.img1123 img {
+  width: 22vw;
+  height: 16vw;
+}
+.img1234 img {
+  width: 22vw;
+  height: 16vw;
+}
+.img11234 img {
+  width: 20vw;
+  height: 18vw;
+}
+.leaderboardTalentImgs {
+  display: flex;
+  justify-content: center;
+}
+.overallLeaderboardTalentImgs {
+  display: flex;
+  justify-content: center;
+}
+/* .leaderboardTable {
+  margin-left: 2.5vw;
+}
+.leaderboardTable {
+  margin-left: 2.4vw;
+}
+.leaderboardTable11 {
+  margin-left: 2.4vw;
+} */
+.fieldgoalLeaderboardTalentImgs1 {
+  display: flex;
+  justify-content: center;
+}
+.leaderboardTalentContainer {
+  display: block;
+  overflow-y: scroll;
+  height: 53vw;
+  line-height: 4vw;
+  width: 52vw;
+  margin-left: 3vw;
+}
+.leaderboardTalentContainer1 {
+  display: block;
+  overflow-y: scroll;
+  height: 53vw;
+  line-height: 4vw;
+}
+.imagesText {
+  color: white;
+  text-align: center;
+  font-size: 3vw;
+  font-family: "helvitBold";
+  margin-left: -4vw;
+}
+.imagesText1 {
+  color: white;
+  text-align: center;
+  font-size: 3vw;
+  font-family: "helvitBold";
+  margin-left: -4vw;
+}
+.imagesText11 {
+  color: white;
+  text-align: center;
+  font-size: 3vw;
+  font-family: "helvitBold";
+  margin-left: -4vw;
+}
+.iButtonBText1 {
+  color: rgb(242 236 236);
+  font-size: 4vw;
+  width: 67vw;
+  text-align: center;
+  padding-top: -38vw;
+  display: block;
+  margin-top: -65vw;
+  text-align: center;
+  padding-left: 16vw;
+  line-height: 5vw;
+}
+.iButtonBText11 {
+  color: rgb(242 236 236);
+  font-size: 4vw;
+  width: 67vw;
+  text-align: center;
+  padding-top: -38vw;
+  display: block;
+  margin-top: -73vw;
+  text-align: center;
+  padding-left: 16vw;
+  line-height: 5vw;
+}
+.tb2 {
+  margin-left: -1vw;
+}
+.tb11 {
+  margin-left: -0.5vw;
+}
+.overflow {
+  height: 69vw;
+  overflow-y: scroll;
+  position: relative;
+  z-index: 10;
+}
+
+.opacity01 {
+  opacity: 0.7;
+}
+.tb011 {
+  margin-left: 0vw;
+}
+.progressBarValue {
+  display: flex;
+  /* justify-content: center; */
+  gap: 7.8vw;
+  padding-left: 24vw;
+  margin-top: -2vw;
+}
+
+.b1 {
+  color: rgb(25 24 24);
+  font-size: 3vw;
+  font-family: "regular2";
+}
+.growthData001 {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  background-color: rgb(0 0 0/80%);
+  z-index: 8;
+}
+.growthbgImg {
+  background-image: url(/popupAndRest/taskGameBg.png);
+  background-size: 100% 100%;
+  width: 90%;
+  height: 64vw;
+  margin: 0 auto;
+  margin-top: -2vw;
+  overflow: hidden;
+  text-align: center;
+}
+.growthBanner {
+  background-image: url(/popupAndRest/SendAccelerationcard.png);
+  background-size: 100% 100%;
+  width: 67%;
+  height: 12vw;
+  margin: 0 auto;
+  margin-top: 39vw;
+}
+.searchBtn img {
+  width: 11vw;
+  position: absolute;
+  /* margin: 34vw 77vw; */
+  /* display: block; */
+  top: 57.4vw;
+  left: 68vw;
+}
+.btnsearch {
+  border-radius: 4vw;
+  width: 50vw;
+  height: 7.5vw;
+  position: absolute;
+  top: 57.8vw;
+  left: 19vw;
+  padding-left: 4vw;
+  font-family: "helvitBold";
+}
+.clickhere1 img {
+  width: 10vw;
+  position: absolute;
+  left: 76vw;
+  top: 62vw;
+}
+.closeBtn001 img {
+  width: 9vw;
+  height: 9vw;
+  margin: 3vw auto;
+  display: block;
+}
+.acceleCard {
+  background-image: url(/BasketballAssets/infoBg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 69vw;
+  display: block;
+  height: 14vw;
+  margin: 0 auto;
+  margin-top: 23vw;
+}
+
+.user001 {
+  width: 11vw;
+  height: 11vw;
+  border-radius: 50%;
+  margin-left: -61vw;
+  margin-top: 1vw;
+}
+.accelerationCardContainer {
+  display: flex;
+  /* flex-direction: row-reverse; */
+  justify-content: space-around;
+  margin-top: -12vw;
+  margin-left: 66vw;
+}
+.accele007 img {
+  width: 13vw;
+  margin: 0 auto;
+  display: block;
+  margin-left: 23vw;
+}
+.cardtext {
+  color: white;
+  display: flex;
+  font-family: "helvitBold";
+  margin-top: 2.2vw;
+  /* margin: 0 auto; */
+  font-size: 2.7vw;
+  margin-left: -52vw;
+  gap: 1vw;
+  flex-direction: column;
+}
+.growthSend img {
+  width: 15vw;
+  height: 8vw;
+  margin: 0 auto;
+}
+.growthSend img {
+  width: 22vw;
+  height: 8vw;
+  margin: 0 auto;
+  display: block;
+  margin-top: 2vw;
+}
+.growthSendText {
+  position: absolute;
+  text-align: center;
+  /* margin-left: 40vw; */
+  /* margin: 0 auto; */
+  left: 44vw;
+  top: 90.2vw;
+  font-family: "helvitBold";
+  font-size: 4vw;
+  color: #1f149a;
+}
+.sendMsg {
+  color: orange;
+  font-size: 4vw;
+  font-family: "helvitBold";
+  display: block;
+  margin-top: 3vw;
+}
+select {
+  color: white;
+  border-radius: 1vw;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 6vw;
+  width: 15vw;
+  /* font-size: 2.5vw; */
+  font-family: helvitBold;
+  background-color: #2564d8;
+}
+option {
+  font-size: 2vw;
+}
+
+/* function input() {
+  // console.log(inputnum1, "first");
+  var max = parseInt(inputnum1.innerText);
+  var value = inputId1.value;
+  if (value !== parseInt(value, 10).toString()) {
+    inputId1.value = "";
+  } else if (value > max) {
+    inputId1.value = max;
+  } else if (value < 0) {
+    inputId1.value = 0;
+  }
+} */
